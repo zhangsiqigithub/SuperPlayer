@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/player_controller_layout_upper"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:background="#b3000000"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/player_controller_textview_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:text="hello world"
+            android:textColor="@android:color/white"
+            android:textSize="14dip" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_controller_layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:background="#b3000000"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/player_btn_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/btn_play_disabled"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/player_orientation_switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/player_orientation_switch_selector_landscape"
+            android:clickable="true" />
+
+        <com.dragon.superplayer.view.PlayerSeekBar
+            android:id="@+id/player_seekbar_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@id/player_orientation_switch_btn"
+            android:layout_toRightOf="@id/player_btn_play_pause"/>
+    </RelativeLayout>
+
+</RelativeLayout>

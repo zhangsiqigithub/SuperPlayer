@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <SeekBar
+        android:id="@+id/player_progress_seekbar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:progressDrawable="@drawable/seek_holo_light"
+        android:thumb="@drawable/seekbar_seek_thumb" />
+
+    <RelativeLayout
+        android:id="@+id/player_seekbar_time_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom" >
+
+        <TextView
+            android:id="@+id/seek_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="00:00"
+            android:textColor="@color/letv_color_9Affffff"
+            android:textSize="14dip" />
+
+        <TextView
+            android:id="@+id/seek_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="00:00"
+            android:textColor="@color/letv_color_9Affffff"
+            android:textSize="14dip" />
+    </RelativeLayout>
+
+</RelativeLayout>
