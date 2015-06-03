@@ -87,7 +87,7 @@ public class VideoTestActivity extends Activity {
 
     private final String DATABASE_PATH = android.os.Environment
             .getExternalStorageDirectory().getAbsolutePath();
-    private final String DATABASE_FILENAME = "adele.mp4";
+    private final String DATABASE_FILENAME = "test.mp4";
 
     private void copyToSdcard() {
         String databaseFilename = this.DATABASE_PATH + "/"
@@ -99,7 +99,7 @@ public class VideoTestActivity extends Activity {
         if (!(new File(databaseFilename)).exists()) {
             try {
                 InputStream is = this.getResources().openRawResource(
-                        R.raw.adele);
+                        R.raw.test);
                 FileOutputStream fos = new FileOutputStream(databaseFilename);
                 byte[] buffer = new byte[8192];
                 int count = 0;
