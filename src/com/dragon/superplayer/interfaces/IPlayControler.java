@@ -2,6 +2,7 @@ package com.dragon.superplayer.interfaces;
 
 import com.dragon.superplayer.callback.PlayControllerCallback;
 import com.dragon.superplayer.mediaplayer.PlayStatus;
+import com.dragon.superplayer.model.PlayItem;
 
 /**
  * 播放控制接口：仅供PlayerManager或外部使用者调用
@@ -10,11 +11,17 @@ import com.dragon.superplayer.mediaplayer.PlayStatus;
 public interface IPlayControler {
 
     /**
-     * 开启一次播放
+     * 开启一次播放：Url播放
      * @param url
      *            播放地址
      */
-    public void startPlay(String url);
+    public void startPlay(String playUrl, int startPosition);
+
+    /**
+     * 开启一次播放：PlayItem播放
+     * @param playItem
+     */
+    public void startPlay(PlayItem playItem);
 
     /**
      * 播放

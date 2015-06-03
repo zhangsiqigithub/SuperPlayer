@@ -82,7 +82,8 @@ public class LocalVideoTestActivity extends Activity {
             this.copyToSdcard();
             this.mPlayUrl = this.DATABASE_PATH + "/" + this.DATABASE_FILENAME;
         }
-        this.mVideoPlayerManager.getPlayController().startPlay(this.mPlayUrl);
+        this.mVideoPlayerManager.getPlayController()
+                .startPlay(this.mPlayUrl, 0);
     }
 
     private final String DATABASE_PATH = android.os.Environment
@@ -98,8 +99,8 @@ public class LocalVideoTestActivity extends Activity {
         }
         if (!(new File(databaseFilename)).exists()) {
             try {
-                InputStream is = this.getResources().openRawResource(
-                        R.raw.test);
+                InputStream is = this.getResources()
+                        .openRawResource(R.raw.test);
                 FileOutputStream fos = new FileOutputStream(databaseFilename);
                 byte[] buffer = new byte[8192];
                 int count = 0;

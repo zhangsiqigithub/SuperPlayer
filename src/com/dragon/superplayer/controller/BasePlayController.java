@@ -1,12 +1,14 @@
 package com.dragon.superplayer.controller;
 
 import android.content.Context;
+import android.text.TextUtils;
 
 import com.dragon.superplayer.interfaces.IMediaPlayer;
 import com.dragon.superplayer.interfaces.IPlayControler;
 import com.dragon.superplayer.interfaces.IViewController;
 import com.dragon.superplayer.mediaplayer.AudioFocusHelper;
 import com.dragon.superplayer.mediaplayer.PlayStatus;
+import com.dragon.superplayer.model.PlayItem;
 
 /**
  * 播放控制实现基类：<br>
@@ -17,6 +19,7 @@ import com.dragon.superplayer.mediaplayer.PlayStatus;
 public abstract class BasePlayController implements IPlayControler {
 
     protected final Context mContext;
+    protected PlayItem mPlayItem;// 播放条目
     protected IMediaPlayer mIMediaPlayer;
     protected AudioFocusHelper mAudioFocusHelper;// 音频焦点工具类
 
@@ -32,9 +35,30 @@ public abstract class BasePlayController implements IPlayControler {
     protected abstract IMediaPlayer initMediaPlayer();
 
     @Override
-    public void startPlay(String url) {
+    public void startPlay(PlayItem playItem) {
+        if (playItem == null) {
+            return;
+        }
+        this.mPlayItem = playItem;
+        String playUrl = this.mPlayItem.getPlayUrl();
+        if (TextUtils.isEmpty(playUrl)) {
+            return;
+        }
         if (this.mIMediaPlayer != null) {
-            this.mIMediaPlayer.startPlay(url);
+            this.mIMediaPlayer.startPlay(playUrl);
+        }
+    }
+
+    @Override
+    public void startPlay(String playUrl, int startPosition) {
+        if (TextUtils.isEmpty(playUrl)) {
+            return;
+        }
+        this.mPlayItem = new PlayItem();
+        this.mPlayItem.setPlayUrl(playUrl);
+        this.mPlayItem.setStartPostion(startPosition);
+        if (this.mIMediaPlayer != null) {
+            this.mIMediaPlayer.startPlay(playUrl);
         }
     }
 

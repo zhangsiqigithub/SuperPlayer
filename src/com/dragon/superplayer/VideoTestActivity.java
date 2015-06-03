@@ -38,7 +38,7 @@ public class VideoTestActivity extends Activity {
     private void testPlay() {
         this.copyToSdcard();
         String url = this.DATABASE_PATH + "/" + this.DATABASE_FILENAME;
-        this.mVideoPlayerManager.getPlayController().startPlay(url);
+        this.mVideoPlayerManager.getPlayController().startPlay(url, 0);
     }
 
     private final String DATABASE_PATH = android.os.Environment
