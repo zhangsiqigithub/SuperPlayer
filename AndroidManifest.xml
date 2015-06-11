@@ -24,7 +24,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".VideoTestActivity"
+            android:name="com.dragon.superplayer.test.VideoTestActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="sensor"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
@@ -35,22 +35,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MusicTestActivity"
+            android:name="com.dragon.superplayer.test.MusicTestActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
-        </activity>
-        <activity
-            android:name=".LocalVideoTestActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="sensor"
-            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-
-                <data android:mimeType="video/*" />
-            </intent-filter>
         </activity>
     </application>
 

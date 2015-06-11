@@ -1,25 +1,28 @@
-package com.dragon.superplayer.view;
+package com.dragon.superplayer.view.controllerview;
 
 import android.content.Context;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 import com.dragon.superplayer.R;
+import com.dragon.superplayer.callback.PlayControllerViewCallback;
 import com.dragon.superplayer.interfaces.IPlayerControllerViewInterface;
-import com.dragon.superplayer.listener.PlayerControllerViewButtonClickListener;
+import com.dragon.superplayer.view.seekbar.DefaultPlayerSeekBar;
 
 /**
  * 播放界面控制层的layout，仅供PlayerView持有
  * @author yeguolong
  */
-public class PlayerControllerView implements IPlayerControllerViewInterface,
-        OnClickListener {
+public class DefaultPlayControllerView implements
+        IPlayerControllerViewInterface, OnClickListener {
 
-    private PlayerControllerViewButtonClickListener mPlayerControllerViewButtonClickListener;
+    private PlayControllerViewCallback mPlayerControllerViewButtonClickListener;// 控制面板点击回调接口
 
     private Context mContext;
     private RelativeLayout mPlayerControllerView;
@@ -28,11 +31,19 @@ public class PlayerControllerView implements IPlayerControllerViewInterface,
     private TextView mTitle;// 标题
 
     // 下面的控制栏：
-    private Button mPlayPauseBtn;// 播放暂停按钮
+    private ImageView mPlayPauseBtn;// 播放暂停按钮
     private Button mOrientationSwitchButton;// 横竖屏切换按钮
-    private PlayerSeekBar mPlayerSeekBar;
+    private DefaultPlayerSeekBar mPlayerSeekBar;// 播放进度条
 
-    public PlayerControllerView(Context context) {
+    public enum PlayPauseBtnStatus {
+        PLAY,
+        PAUSE,
+        FAST_RUN,
+        FAST_BACK,
+        STOP
+    }
+
+    public DefaultPlayControllerView(Context context) {
         this.init(context);
     }
 
@@ -55,11 +66,11 @@ public class PlayerControllerView implements IPlayerControllerViewInterface,
     }
 
     private void initBottomView() {
-        this.mPlayPauseBtn = (Button) this.mPlayerControllerView
+        this.mPlayPauseBtn = (ImageView) this.mPlayerControllerView
                 .findViewById(R.id.player_btn_play_pause);
         this.mOrientationSwitchButton = (Button) this.mPlayerControllerView
                 .findViewById(R.id.player_orientation_switch_btn);
-        this.mPlayerSeekBar = (PlayerSeekBar) this.mPlayerControllerView
+        this.mPlayerSeekBar = (DefaultPlayerSeekBar) this.mPlayerControllerView
                 .findViewById(R.id.player_seekbar_layout);
     }
 
@@ -105,8 +116,60 @@ public class PlayerControllerView implements IPlayerControllerViewInterface,
 
     @Override
     public void setPlayerControllerViewButtonClickListener(
-            PlayerControllerViewButtonClickListener playerControllerViewButtonClickListener) {
+            PlayControllerViewCallback playerControllerViewButtonClickListener) {
         this.mPlayerControllerViewButtonClickListener = playerControllerViewButtonClickListener;
+    }
+
+    @Override
+    public boolean isShowing() {
+        if (this.mPlayerControllerView != null) {
+            return this.mPlayerControllerView.getVisibility() == View.VISIBLE;
+        }
+        return false;
+    }
+
+    @Override
+    public void setPlayerSeekbarProgress(int currentPostion) {
+        if (this.mPlayerSeekBar != null) {
+            this.mPlayerSeekBar.setProgress(currentPostion);
+        }
+    }
+
+    @Override
+    public void setPlayerSeekbarMax(int max) {
+        if (this.mPlayerSeekBar != null) {
+            this.mPlayerSeekBar.setMax(max);
+        }
+    }
+
+    @Override
+    public void setPlayerSeekBarChangeListener(OnSeekBarChangeListener l) {
+        this.mPlayerSeekBar.setOnSeekBarChangeListener(l);
+    }
+
+    @Override
+    public void updatePlayPauseBtn(PlayPauseBtnStatus playPauseBtnStatus) {
+        switch (playPauseBtnStatus) {
+        case PLAY:
+            this.mPlayPauseBtn
+                    .setImageResource(R.drawable.player_play_btn_selector);
+            break;
+        case PAUSE:
+            this.mPlayPauseBtn
+                    .setImageResource(R.drawable.player_pause_btn_selector);
+            break;
+        case FAST_RUN:
+            this.mPlayPauseBtn.setImageResource(R.drawable.player_icon_forward);
+            break;
+        case FAST_BACK:
+            this.mPlayPauseBtn.setImageResource(R.drawable.player_icon_rewind);
+            break;
+        case STOP:
+            this.mPlayPauseBtn.setImageResource(R.drawable.btn_play_disabled);
+            break;
+        default:
+            break;
+        }
     }
 
 }

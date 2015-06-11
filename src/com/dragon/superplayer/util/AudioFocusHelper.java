@@ -1,4 +1,4 @@
-package com.dragon.superplayer.mediaplayer;
+package com.dragon.superplayer.util;
 
 import android.content.Context;
 import android.media.AudioManager;

@@ -34,6 +34,11 @@ public enum PlayStatus {
     /**
      * 正在缓冲中
      */
-    BUFFERRING
+    BUFFERRING,
+
+    /**
+     * 已经准备好了
+     */
+    PREPARED
 
 }

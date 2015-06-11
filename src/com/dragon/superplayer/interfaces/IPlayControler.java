@@ -40,6 +40,8 @@ public interface IPlayControler {
 
     /**
      * seek快进
+     * @param targetPosition
+     *            毫秒值
      */
     public void doSeek(int targetPosition);
 
@@ -69,5 +71,19 @@ public interface IPlayControler {
      */
     public void setPlayControllerCallback(
             PlayControllerCallback playControllerCallback);
+
+    /**
+     * 请求音频焦点
+     */
+    public void requestAudioFocus();
+
+    /**
+     * 释放音频焦点
+     */
+    public void releaseAudioFocus();
+
+    public int getCurrentPosition();
+
+    public int getDuration();
 
 }

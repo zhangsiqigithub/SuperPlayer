@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 
 import com.dragon.superplayer.callback.PlayControllerCallback;
 import com.dragon.superplayer.interfaces.IMediaPlayer;
+import com.dragon.superplayer.interfaces.IViewController;
 import com.dragon.superplayer.mediaplayer.BaseMediaPlayer;
 import com.dragon.superplayer.mediaplayer.MediaPlayerListener;
 import com.dragon.superplayer.util.LogUtil;
@@ -92,6 +93,63 @@ public class MusicPlayController extends BasePlayController {
     public void setPlayControllerCallback(
             PlayControllerCallback playControllerCallback) {
 
+    }
+
+    @Override
+    public void doPlay() {
+        if (this.mIMediaPlayer != null) {
+            this.mIMediaPlayer.doPlay();
+        }
+    }
+
+    @Override
+    public void doPause() {
+        if (this.mIMediaPlayer != null) {
+            this.mIMediaPlayer.doPause();
+        }
+    }
+
+    @Override
+    public void doStop() {
+        if (this.mIMediaPlayer != null) {
+            this.mIMediaPlayer.doStop();
+        }
+    }
+
+    @Override
+    public void doSeek(int targetPosition) {
+        if (this.mIMediaPlayer != null) {
+            this.mIMediaPlayer.doSeek(targetPosition);
+        }
+    }
+
+    @Override
+    public IViewController getViewController() {
+        return null;
+    }
+
+    /**
+     * 获取当前播放进度
+     * @return
+     */
+    @Override
+    public int getCurrentPosition() {
+        if (this.mIMediaPlayer != null) {
+            return this.mIMediaPlayer.getCurrentPosition();
+        }
+        return 0;
+    }
+
+    /**
+     * 获取播放总时长
+     * @return
+     */
+    @Override
+    public int getDuration() {
+        if (this.mIMediaPlayer != null) {
+            return this.mIMediaPlayer.getDuration();
+        }
+        return 0;
     }
 
 }

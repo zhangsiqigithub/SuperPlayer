@@ -1,9 +1,9 @@
-package com.dragon.superplayer;
+package com.dragon.superplayer.test;
 
 import android.app.Activity;
 import android.os.Bundle;
 
-import com.dragon.superplayer.manager.MusicPlayerManager;
+import com.dragon.superplayer.MusicPlayerManager;
 import com.dragon.superplayer.util.LogUtil;
 
 public class MusicTestActivity extends Activity {

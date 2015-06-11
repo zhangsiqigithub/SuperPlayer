@@ -1,9 +1,10 @@
 package com.dragon.superplayer.interfaces;
 
-import android.view.SurfaceHolder;
-
 import com.dragon.superplayer.mediaplayer.MediaPlayerListener;
 import com.dragon.superplayer.mediaplayer.PlayStatus;
+
+import android.view.SurfaceHolder;
+
 
 /**
  * MediaPlayer播放控制接口，仅供IPlayControler的实现类持有

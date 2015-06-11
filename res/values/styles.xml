@@ -1,4 +1,14 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <style name="player_seekbar" >
+        <item name="android:progressDrawable">@drawable/seekbar_progress</item>
+        <item name="android:thumb">@drawable/ic_seekbar_big</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">37dp</item>
+        <item name="android:minHeight">37dp</item>
+        <item name="android:thumbOffset">0dp</item>
+        <item name="android:background">@null</item>
+    </style>
 
 </resources>

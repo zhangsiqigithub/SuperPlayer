@@ -1,4 +1,4 @@
-package com.dragon.superplayer.manager;
+package com.dragon.superplayer;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -11,16 +11,19 @@ import android.view.ViewGroup.LayoutParams;
 
 import com.dragon.superplayer.callback.PlayControllerCallback;
 import com.dragon.superplayer.controller.VideoPlayController;
-import com.dragon.superplayer.device.ScreenStatus;
 import com.dragon.superplayer.interfaces.IPlayControler;
 import com.dragon.superplayer.interfaces.IViewController;
+import com.dragon.superplayer.mediaplayer.ScreenStatus;
 import com.dragon.superplayer.util.ActivityUtil;
 import com.dragon.superplayer.util.ContextProvider;
 import com.dragon.superplayer.util.LogUtil;
 
 /**
- * 播放管理者，（单路播放：非单例）<br>
- * 与内部和外部交互的入口类，持有：IPlayControler
+ * 视频播放管理者：（单路播放：非单例）<br>
+ * 1、负责内部和外部交互。<br>
+ * 2、负责持有和初始化：mIPlayControler<br>
+ * 3、负责播放相关的配置：mPlayerConfig<br>
+ * 4、负责注册和监听播放相关的广播和回调：mBroadcastReceiver<br>
  * @author yeguolong
  */
 public class VideoPlayerManager {
@@ -32,9 +35,9 @@ public class VideoPlayerManager {
 
     private Activity mActivity;
 
-    private IPlayControler mIPlayControler;
-    private BroadcastReceiver mBroadcastReceiver;
-    private final PlayerConfig mPlayerConfig;
+    private IPlayControler mIPlayControler;// 播放控制接口
+    private BroadcastReceiver mBroadcastReceiver;// 注册广播监听
+    private final PlayerConfig mPlayerConfig;// 播放器相关配置类
 
     public VideoPlayerManager(Activity activity) {
         this.mPlayerConfig = new PlayerConfig();
@@ -60,6 +63,9 @@ public class VideoPlayerManager {
         this.updatePlayerLayout(ScreenStatus.SMALLSCREEN);
     }
 
+    /**
+     * 初始化播放控制器
+     */
     private void initVideoPlayController() {
         this.mIPlayControler = new VideoPlayController(this.mActivity);
         this.mIPlayControler
@@ -190,7 +196,6 @@ public class VideoPlayerManager {
                 } else if (ACTION_CONNECTIVITY_CHANGE.equals(action)) {// 网络改变
 
                 } else if (Intent.ACTION_BATTERY_CHANGED.equals(action)) {// 电量改变
-
                     int voltage = intent.getIntExtra(
                             BatteryManager.EXTRA_VOLTAGE, -1);
 
@@ -202,11 +207,11 @@ public class VideoPlayerManager {
                     if (level < 15) {
                     }
                 } else if (Intent.ACTION_SCREEN_ON.equals(action)) {// 开屏
-
+                    VideoPlayerManager.this.log("ACTION_SCREEN_ON");
                 } else if (Intent.ACTION_SCREEN_OFF.equals(action)) {// 锁屏
-
+                    VideoPlayerManager.this.log("ACTION_SCREEN_OFF");
                 } else if (Intent.ACTION_USER_PRESENT.equals(action)) {// 解锁
-
+                    VideoPlayerManager.this.log("ACTION_USER_PRESENT");
                 }
             }
         };

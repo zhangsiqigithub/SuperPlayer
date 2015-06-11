@@ -42,7 +42,11 @@ public class BaseMediaPlayer implements IMediaPlayer {
         this.doPrepare(url);
     }
 
-    protected void doPrepare(final String url) {
+    /**
+     * 开始请求播放数据
+     * @param url
+     */
+    protected synchronized void doPrepare(final String url) {
         this.log("doPrepare");
         if (this.mMediaPlayer != null) {
             new Thread() {
@@ -63,7 +67,7 @@ public class BaseMediaPlayer implements IMediaPlayer {
         }
     }
 
-    protected void initMediaPlayer() {
+    protected synchronized void initMediaPlayer() {
         this.log("initMediaPlayer");
         this.mMediaPlayer = new MediaPlayer();
         this.mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
@@ -126,6 +130,7 @@ public class BaseMediaPlayer implements IMediaPlayer {
 
             @Override
             public void onPrepared(MediaPlayer mp) {
+                BaseMediaPlayer.this.mPlayStatus = PlayStatus.PREPARED;
                 if (BaseMediaPlayer.this.mMediaPlayerListener != null) {
                     BaseMediaPlayer.this.mMediaPlayerListener.onPrepared(mp);
                 }
@@ -153,7 +158,6 @@ public class BaseMediaPlayer implements IMediaPlayer {
 
     @Override
     public void setDisPlay(SurfaceHolder surfaceHolder) {
-        this.log("setDisPlay");
         if (this.mMediaPlayer != null) {
             this.mMediaPlayer.setDisplay(surfaceHolder);
         }
@@ -173,7 +177,7 @@ public class BaseMediaPlayer implements IMediaPlayer {
     }
 
     @Override
-    public void doSeek(int targetMsecPosition) {
+    public synchronized void doSeek(int targetMsecPosition) {
         this.log("doSeek-->targetMsecPosition:" + targetMsecPosition);
         if (this.mMediaPlayer != null) {
             try {
@@ -211,7 +215,7 @@ public class BaseMediaPlayer implements IMediaPlayer {
     }
 
     @Override
-    public void gcMediaPlayer() {
+    public synchronized void gcMediaPlayer() {
         this.log("gcMediaPlayer");
         if (this.mMediaPlayer != null) {
             try {
@@ -249,7 +253,7 @@ public class BaseMediaPlayer implements IMediaPlayer {
     @Override
     public int getDuration() {
         if (this.mMediaPlayer != null) {
-            this.mMediaPlayer.getDuration();
+            return this.mMediaPlayer.getDuration();
         }
         return 0;
     }

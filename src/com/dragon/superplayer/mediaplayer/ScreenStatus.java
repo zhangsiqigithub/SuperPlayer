@@ -1,4 +1,4 @@
-package com.dragon.superplayer.device;
+package com.dragon.superplayer.mediaplayer;
 
 /**
  * 屏幕全屏、半屏状态

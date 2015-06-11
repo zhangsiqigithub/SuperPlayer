@@ -1,8 +1,4 @@
-package com.dragon.superplayer;
-
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.InputStream;
+package com.dragon.superplayer.test;
 
 import android.app.Activity;
 import android.content.res.Configuration;
@@ -10,7 +6,9 @@ import android.os.Bundle;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.dragon.superplayer.manager.VideoPlayerManager;
+import com.dragon.superplayer.R;
+import com.dragon.superplayer.VideoPlayerManager;
+import com.dragon.superplayer.util.LogUtil;
 
 public class VideoTestActivity extends Activity {
 
@@ -43,32 +41,32 @@ public class VideoTestActivity extends Activity {
 
     private final String DATABASE_PATH = android.os.Environment
             .getExternalStorageDirectory().getAbsolutePath();
-    private final String DATABASE_FILENAME = "test.mp4";
+    private final String DATABASE_FILENAME = "adele.mp4";
 
     private void copyToSdcard() {
-        String databaseFilename = this.DATABASE_PATH + "/"
-                + this.DATABASE_FILENAME;
-        File dir = new File(this.DATABASE_PATH);
-        if (!dir.exists()) {
-            dir.mkdirs();
-        }
-        if (!(new File(databaseFilename)).exists()) {
-            try {
-                InputStream is = this.getResources()
-                        .openRawResource(R.raw.test);
-                FileOutputStream fos = new FileOutputStream(databaseFilename);
-                byte[] buffer = new byte[8192];
-                int count = 0;
-
-                while ((count = is.read(buffer)) > 0) {
-                    fos.write(buffer, 0, count);
-                }
-                fos.close();
-                is.close();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
+        // String databaseFilename = this.DATABASE_PATH + "/"
+        // + this.DATABASE_FILENAME;
+        // File dir = new File(this.DATABASE_PATH);
+        // if (!dir.exists()) {
+        // dir.mkdirs();
+        // }
+        // if (!(new File(databaseFilename)).exists()) {
+        // try {
+        // InputStream is = this.getResources()
+        // .openRawResource(R.raw.test);
+        // FileOutputStream fos = new FileOutputStream(databaseFilename);
+        // byte[] buffer = new byte[8192];
+        // int count = 0;
+        //
+        // while ((count = is.read(buffer)) > 0) {
+        // fos.write(buffer, 0, count);
+        // }
+        // fos.close();
+        // is.close();
+        // } catch (Exception e) {
+        // e.printStackTrace();
+        // }
+        // }
     }
 
     @Override
@@ -82,17 +80,18 @@ public class VideoTestActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        if (this.mVideoPlayerManager != null) {
-            this.mVideoPlayerManager.getPlayController().doPlay();
-        }
+        this.log("onResume");
+        // if (this.mVideoPlayerManager != null) {
+        // this.mVideoPlayerManager.getPlayController().doPlay();
+        // }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        if (this.mVideoPlayerManager != null) {
-            this.mVideoPlayerManager.getPlayController().doPause();
-        }
+        // if (this.mVideoPlayerManager != null) {
+        // this.mVideoPlayerManager.getPlayController().doPause();
+        // }
     }
 
     @Override
@@ -101,6 +100,10 @@ public class VideoTestActivity extends Activity {
         if (this.mVideoPlayerManager != null) {
             this.mVideoPlayerManager.release();
         }
+    }
+
+    private void log(String log) {
+        LogUtil.d("VideoTestActivity-->" + log);
     }
 
 }

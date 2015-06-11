@@ -1,4 +1,4 @@
-package com.dragon.superplayer.manager;
+package com.dragon.superplayer;
 
 import android.content.Context;
 

@@ -1,6 +1,10 @@
-package com.dragon.superplayer.listener;
+package com.dragon.superplayer.callback;
 
-public interface PlayerControllerViewButtonClickListener {
+/**
+ * 控制面板点击回调接口
+ * @author yeguolong
+ */
+public interface PlayControllerViewCallback {
     /**
      * 当播放暂停按钮点击
      */

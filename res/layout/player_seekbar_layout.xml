@@ -1,22 +1,23 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/transparent" >
+    android:layout_height="match_parent" >
 
     <SeekBar
         android:id="@+id/player_progress_seekbar"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:background="@android:color/transparent"
-        android:progressDrawable="@drawable/seek_holo_light"
-        android:thumb="@drawable/seekbar_seek_thumb" />
+        android:max="100"
+        android:maxHeight="100dip"
+        android:minHeight="100dip"
+        android:progressDrawable="@drawable/seekbar_progress"
+        android:thumb="@drawable/ic_seekbar_big"
+        android:thumbOffset="0dip" />
 
     <RelativeLayout
         android:id="@+id/player_seekbar_time_container"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="bottom" >
+        android:layout_height="fill_parent" >
 
         <TextView
             android:id="@+id/seek_start_time"
