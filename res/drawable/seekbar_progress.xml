@@ -8,7 +8,8 @@
             </scale>
         </clip>
     </item>
-    <!-- <item android:id="@android:id/progress">
+    <!--
+    <item android:id="@android:id/progress">
         <clip>
             <scale android:scaleWidth="100%" >
                 <shape android:shape="rectangle" >
@@ -20,7 +21,8 @@
                 </shape>
             </scale>
         </clip>
-    </item> -->
+    </item>
+    -->
     <item android:id="@android:id/progress">
         <clip>
             <scale android:scaleWidth="100%" >
@@ -28,8 +30,8 @@
                     <gradient
                         android:centerX="50%"
                         android:centerY="50%"
-                        android:endColor="#36a8ff"
-                        android:startColor="#6600a0e9" />
+                        android:endColor="#cc36a8ff"
+                        android:startColor="#3300a0e9" />
                 </shape>
             </scale>
         </clip>

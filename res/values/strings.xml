@@ -4,5 +4,6 @@
     <string name="app_name">SuperPlayer</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="player_tips_loading_text">正在缓冲...</string>
 
 </resources>

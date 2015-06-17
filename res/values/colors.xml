@@ -1,172 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="letv_color_999999">#999999</color>
-    <color name="letv_color_88000000">#88000000</color>
-    <color name="letv_color_f8f8f8">#fff8f8f8</color>
-    <color name="letv_color_c8c8c8">#c8c8c8</color>
-    <color name="letv_color_b5b5b5">#b5b5b5</color>
-    <color name="letv_color_ffffff">#ffffff</color>
-    <color name="letv_color_ff0000">#ff0000</color>
-    <color name="letv_color_0000ff">#0000ff</color>
-    <color name="letv_color_00ff00">#00ff00</color>
-    <color name="letv_color_f4f4f4">#f4f4f4</color>
-    <color name="letv_color_52caff">#52caff</color>
-    <color name="letv_color_00000000">#00000000</color>
-    <color name="letv_color_33000000">#33000000</color>
-    <color name="letv_color_ff000000">#ff000000</color>
-    <color name="letv_color_80ffffff">#80ffffff</color>
-    <color name="letv_color_99ffffff">#99ffffff</color>
-    <color name="letv_color_ffffffff">#ffffffff</color>
-    <color name="letv_color_b9b9b9">#b9b9b9</color>
-    <color name="letv_color_ff5dccff">#ff5dccff</color>
-    <color name="letv_color_ffc1ebff">#ffc1ebff</color>
-    <color name="letv_color_ffd6f1ff">#ffd6f1ff</color>
-    <color name="letv_color_333333">#333333</color>
-    <color name="letv_color_ff646464">#646464</color>
-    <color name="letv_color_66ffffff">#66ffffff</color>
-    <color name="letv_color_ccffffff">#ccffffff</color>
-    <color name="letv_color_e3eef7">#e3eef7</color>
-    <color name="letv_color_bababa">#bababa</color>
-    <color name="letv_color_313131">#313131</color>
-    <color name="letv_color_2c2c2c">#2c2c2c</color>
-    <color name="letv_color_1c1c1c">#1c1c1c</color>
-    <color name="letv_color_dddddd">#dddddd</color>
+    <color name="player_color_999999">#999999</color>
+    <color name="player_color_88000000">#88000000</color>
+    <color name="player_color_f8f8f8">#fff8f8f8</color>
+    <color name="player_color_c8c8c8">#c8c8c8</color>
+    <color name="player_color_b5b5b5">#b5b5b5</color>
+    <color name="player_color_ffffff">#ffffff</color>
+    <color name="player_color_ff0000">#ff0000</color>
+    <color name="player_color_0000ff">#0000ff</color>
+    <color name="player_color_00ff00">#00ff00</color>
+    <color name="player_color_f4f4f4">#f4f4f4</color>
+    <color name="player_color_52caff">#52caff</color>
+    <color name="player_color_00000000">#00000000</color>
+    <color name="player_color_33000000">#33000000</color>
+    <color name="player_color_ff000000">#ff000000</color>
+    <color name="player_color_80ffffff">#80ffffff</color>
+    <color name="player_color_99ffffff">#99ffffff</color>
+    <color name="player_color_ffffffff">#ffffffff</color>
+    <color name="player_color_b9b9b9">#b9b9b9</color>
+    <color name="player_color_ff5dccff">#ff5dccff</color>
+    <color name="player_color_ffc1ebff">#ffc1ebff</color>
+    <color name="player_color_ffd6f1ff">#ffd6f1ff</color>
+    <color name="player_color_333333">#333333</color>
+    <color name="player_color_ff646464">#646464</color>
+    <color name="player_color_66ffffff">#66ffffff</color>
+    <color name="player_color_ccffffff">#ccffffff</color>
+    <color name="player_color_e3eef7">#e3eef7</color>
+    <color name="player_color_bababa">#bababa</color>
+    <color name="player_color_313131">#313131</color>
+    <color name="player_color_2c2c2c">#2c2c2c</color>
+    <color name="player_color_1c1c1c">#1c1c1c</color>
+    <color name="player_color_dddddd">#dddddd</color>
 
     <!-- 背景灰 -->
-    <color name="letv_color_fff1f1f1">#fff1f1f1</color>
+    <color name="player_color_fff1f1f1">#fff1f1f1</color>
     <!-- 背景灰 -->
-    <color name="letv_color_fff6f6f6">#fff6f6f6</color>
-    <color name="letv_color_ffdea5">#ffffdea5</color>
+    <color name="player_color_fff6f6f6">#fff6f6f6</color>
+    <color name="player_color_ffdea5">#ffffdea5</color>
     <!-- 纯白 -->
-    <color name="letv_color_FFFFFF">#FFFFFF</color>
+    <color name="player_color_FFFFFF">#FFFFFF</color>
     <!-- 背景白 -->
-    <color name="letv_color_fffdfdfd">#fffdfdfd</color>
+    <color name="player_color_fffdfdfd">#fffdfdfd</color>
     <!-- 字体黑 -->
-    <color name="letv_color_ff393939">#ff393939</color>
-    <color name="letv_color_ff616161">#ff616161</color>
-    <color name="letv_color_ff242424">#ff242424</color>
-    <color name="letv_color_ff5d5d5d">#ff5d5d5d</color>
-    <color name="letv_color_ff7f7f7f">#ff7f7f7f</color>
+    <color name="player_color_ff393939">#ff393939</color>
+    <color name="player_color_ff616161">#ff616161</color>
+    <color name="player_color_ff242424">#ff242424</color>
+    <color name="player_color_ff5d5d5d">#ff5d5d5d</color>
+    <color name="player_color_ff7f7f7f">#ff7f7f7f</color>
     <!-- 字体蓝 -->
-    <color name="letv_color_ff00a0e9">#ff00a0e9</color>
-    <color name="letv_color_cc00a0e9">#cc00a0e9</color>
-    <color name="letv_color_6600a0e9">#6600a0e9</color>
-    <color name="letv_color_ffc8ebff">#ffc8ebff</color>
+    <color name="player_color_ff00a0e9">#ff00a0e9</color>
+    <color name="player_color_cc00a0e9">#cc00a0e9</color>
+    <color name="player_color_6600a0e9">#6600a0e9</color>
+    <color name="player_color_ffc8ebff">#ffc8ebff</color>
     <!-- 字体绿 -->
-    <color name="letv_color_ff08c809">#ff08c809</color>
+    <color name="player_color_ff08c809">#ff08c809</color>
     <!-- 字体蓝50%透明 -->
-    <color name="letv_color_8000a0e9">#8000a0e9</color>
-    <color name="letv_color_80d3d3d3">#80d3d3d3</color>
-    <color name="letv_color_80dddddd">#80dddddd</color>
+    <color name="player_color_8000a0e9">#8000a0e9</color>
+    <color name="player_color_80d3d3d3">#80d3d3d3</color>
+    <color name="player_color_80dddddd">#80dddddd</color>
     <!-- 字体灰 -->
-    <color name="letv_color_ff2c95d2">#ff2c95d2</color>
-    <color name="letv_color_ffa1a1a1">#ffa1a1a1</color>
-    <color name="letv_color_ffa6a6a6">#ffa6a6a6</color>
+    <color name="player_color_ff2c95d2">#ff2c95d2</color>
+    <color name="player_color_ffa1a1a1">#ffa1a1a1</color>
+    <color name="player_color_ffa6a6a6">#ffa6a6a6</color>
     <!-- list分割线 -->
-    <color name="letv_color_ffdfdfdf">#ffdfdfdf</color>
-    <color name="letv_color_ffdadada">#ffdadada</color>
-    <color name="letv_color_ff969696">#ff969696</color>
-    <color name="letv_color_ff623e00">#ff623e00</color>
-    <color name="letv_color_ff999999">#ff999999</color>
+    <color name="player_color_ffdfdfdf">#ffdfdfdf</color>
+    <color name="player_color_ffdadada">#ffdadada</color>
+    <color name="player_color_ff969696">#ff969696</color>
+    <color name="player_color_ff623e00">#ff623e00</color>
+    <color name="player_color_ff999999">#ff999999</color>
     <!-- 红色字体 -->
-    <color name="letv_color_ffff0000">#ffff0000</color>
-    <color name="letv_color_ffd80c18">#ffd80c18</color>
-    <color name="letv_color_df3632">#df3632</color>
+    <color name="player_color_ffff0000">#ffff0000</color>
+    <color name="player_color_ffd80c18">#ffd80c18</color>
+    <color name="player_color_df3632">#df3632</color>
     <!-- 顶部背景红 -->
-    <color name="letv_color_ffef4444">#ffef4444</color>
+    <color name="player_color_ffef4444">#ffef4444</color>
 
     <!-- 红色button -->
-    <color name="letv_color_cd000000">#cd000000</color>
-    <color name="letv_color_55000000">#55000000</color>
-    <color name="letv_color_99000000">#99000000</color>
-    <color name="letv_color_ef000000">#ef000000</color>
-    <color name="letv_color_80000000">#80000000</color>
-    <color name="letv_color_B3000000">#B3000000</color>
-    <color name="letv_color_4c000000">#4c000000</color>
-    <color name="letv_color_4cffffff">#4cffffff</color>
-    <color name="letv_color_00ffffff">#00ffffff</color>
-    <color name="letv_color_fff0f0f0">#fff0f0f0</color>
-    <color name="letv_color_00f0f0f0">#00f0f0f0</color>
-    <color name="letv_color_ffe14b4b">#ffe14b4b</color>
-    <color name="letv_color_ffe6e6e6">#ffe6e6e6</color>
-    <color name="letv_color_77e14b4b">#77e14b4b</color>
-    <color name="letv_color_ffec7171">#ffec7171</color>
-    <!-- <color name="letv_color_ff07c708">#ff07c708</color> -->
-    <color name="letv_color_ff07c708">#ff008c01</color>
-    <color name="letv_color_77067ac7">#77067ac7</color>
-    <color name="letv_color_80067ac7">#80067ac7</color>
-    <color name="letv_color_773995d2">#773995d2</color>
-    <color name="letv_color_b3000000">#b3000000</color>
-    <color name="letv_color_cc000000">#cc000000</color>
-    <color name="letv_color_ff5c5c5c">#ff5c5c5c</color>
-    <color name="letv_color_ff808080">#ff808080</color>
+    <color name="player_color_cd000000">#cd000000</color>
+    <color name="player_color_55000000">#55000000</color>
+    <color name="player_color_99000000">#99000000</color>
+    <color name="player_color_ef000000">#ef000000</color>
+    <color name="player_color_80000000">#80000000</color>
+    <color name="player_color_B3000000">#B3000000</color>
+    <color name="player_color_4c000000">#4c000000</color>
+    <color name="player_color_4cffffff">#4cffffff</color>
+    <color name="player_color_00ffffff">#00ffffff</color>
+    <color name="player_color_fff0f0f0">#fff0f0f0</color>
+    <color name="player_color_00f0f0f0">#00f0f0f0</color>
+    <color name="player_color_ffe14b4b">#ffe14b4b</color>
+    <color name="player_color_ffe6e6e6">#ffe6e6e6</color>
+    <color name="player_color_77e14b4b">#77e14b4b</color>
+    <color name="player_color_ffec7171">#ffec7171</color>
+    <!-- <color name="player_color_ff07c708">#ff07c708</color> -->
+    <color name="player_color_ff07c708">#ff008c01</color>
+    <color name="player_color_77067ac7">#77067ac7</color>
+    <color name="player_color_80067ac7">#80067ac7</color>
+    <color name="player_color_773995d2">#773995d2</color>
+    <color name="player_color_b3000000">#b3000000</color>
+    <color name="player_color_cc000000">#cc000000</color>
+    <color name="player_color_ff5c5c5c">#ff5c5c5c</color>
+    <color name="player_color_ff808080">#ff808080</color>
     <!-- 金黄色字体 -->
-    <color name="letv_color_fff9a038">#fff9a038</color>
-    <color name="letv_color_ec8e1f">#ec8e1f</color>
-    <color name="letv_color_ffececec">#ffececec</color>
-    <color name="letv_color_ffb4b4b4">#ffb4b4b4</color>
-    <color name="letv_color_cc3c3c3c">#cc3c3c3c</color>
-    <color name="letv_color_cc494949">#cc494949</color>
-    <color name="letv_color_ffbababa">#ffbababa</color>
-    <color name="letv_color_ffadadad">#ffadadad</color>
-    <color name="letv_color_ffdc0101">#ffdc0101</color>
-    <color name="letv_color_ffeaeaea">#ffeaeaea</color>
-    <color name="letv_color_ffe3e3e3">#ffe3e3e3</color>
-    <color name="letv_color_ff3995d2">#ff3995d2</color>
-    <color name="letv_color_ff067ac7">#ff067ac7</color>
-    <color name="letv_color_ff474747">#ff474747</color>
-    <color name="letv_color_ff606060">#ff606060</color>
-    <color name="letv_color_ff5fbbf8">#ff5fbbf8</color>
-    <color name="letv_color_ff333333">#ff333333</color>
-    <color name="letv_color_fffb9f38">#fffb9f38</color>
+    <color name="player_color_fff9a038">#fff9a038</color>
+    <color name="player_color_ec8e1f">#ec8e1f</color>
+    <color name="player_color_ffececec">#ffececec</color>
+    <color name="player_color_ffb4b4b4">#ffb4b4b4</color>
+    <color name="player_color_cc3c3c3c">#cc3c3c3c</color>
+    <color name="player_color_cc494949">#cc494949</color>
+    <color name="player_color_ffbababa">#ffbababa</color>
+    <color name="player_color_ffadadad">#ffadadad</color>
+    <color name="player_color_ffdc0101">#ffdc0101</color>
+    <color name="player_color_ffeaeaea">#ffeaeaea</color>
+    <color name="player_color_ffe3e3e3">#ffe3e3e3</color>
+    <color name="player_color_ff3995d2">#ff3995d2</color>
+    <color name="player_color_ff067ac7">#ff067ac7</color>
+    <color name="player_color_ff474747">#ff474747</color>
+    <color name="player_color_ff606060">#ff606060</color>
+    <color name="player_color_ff5fbbf8">#ff5fbbf8</color>
+    <color name="player_color_ff333333">#ff333333</color>
+    <color name="player_color_fffb9f38">#fffb9f38</color>
     <color name="main_blue">#FF54bceb</color>
     <color name="main_gray">#FFaeaeae</color>
     <color name="main_white">#FFececec</color>
     <color name="main_darkgray">#FF333333</color>
     <color name="main_disable">#FFa5a5a5</color>
-    <color name="letv_ff494949">#FF494949</color>
-    <color name="letv_color_ffd0d0d0">#ffd0d0d0</color>
-    <color name="letv_color_ffa9cce4">#ffa9cce4</color>
-    <color name="letv_color_ff444444">#ff444444</color>
-    <color name="letv_color_ff666666">#ff666666</color>
-    <color name="letv_color_ff0f93de">#ff0f93de</color>
-    <color name="letv_color_ffdbdbdb">#ffdbdbdb</color>
-    <color name="letv_color_ff535353">#ff535353</color>
-    <color name="letv_color_ff6e6e6e">#ff6e6e6e</color>
-    <color name="letv_color_cd161616">#cd161616</color>
-    <color name="letv_color_b0000000">#b0000000</color>
-    <color name="letv_color_ff46474a">#ff46474a</color>
-    <color name="letv_color_ffa1d2f3">#ffa1d2f3</color>
-    <color name="letv_color_ff4a9cd2">#ff4a9cd2</color>
-    <color name="letv_color_ff43b9ef">#ff43b9ef</color>
-    <color name="letv_color_ffccecfb">#ffccecfb</color>
-    <color name="letv_color_3fd6d6d6">#3fd6d6d6</color>
-    <color name="letv_color_e4e4e4">#e4e4e4</color>
-    <color name="letv_color_aeaeae">#aeaeae</color>
-    <color name="letv_color_1e1e1e">#1e1e1e</color>
-    <color name="letv_color_d3d3d3">#d3d3d3</color>
-    <color name="letv_color_ec5353">#ec5353</color>
-    <color name="letv_color_171717">#171717</color>
-    <color name="letv_color_cc269bf6">#cc269bf6</color>
-    <color name="letv_color_f43131">#f43131</color>
-    <color name="letv_color_c14040">#c14040</color>
-    <color name="letv_color_7fd3d3d3">#7fd3d3d3</color>
+    <color name="player_ff494949">#FF494949</color>
+    <color name="player_color_ffd0d0d0">#ffd0d0d0</color>
+    <color name="player_color_ffa9cce4">#ffa9cce4</color>
+    <color name="player_color_ff444444">#ff444444</color>
+    <color name="player_color_ff666666">#ff666666</color>
+    <color name="player_color_ff0f93de">#ff0f93de</color>
+    <color name="player_color_ffdbdbdb">#ffdbdbdb</color>
+    <color name="player_color_ff535353">#ff535353</color>
+    <color name="player_color_ff6e6e6e">#ff6e6e6e</color>
+    <color name="player_color_cd161616">#cd161616</color>
+    <color name="player_color_b0000000">#b0000000</color>
+    <color name="player_color_ff46474a">#ff46474a</color>
+    <color name="player_color_ffa1d2f3">#ffa1d2f3</color>
+    <color name="player_color_ff4a9cd2">#ff4a9cd2</color>
+    <color name="player_color_ff43b9ef">#ff43b9ef</color>
+    <color name="player_color_ffccecfb">#ffccecfb</color>
+    <color name="player_color_3fd6d6d6">#3fd6d6d6</color>
+    <color name="player_color_e4e4e4">#e4e4e4</color>
+    <color name="player_color_aeaeae">#aeaeae</color>
+    <color name="player_color_1e1e1e">#1e1e1e</color>
+    <color name="player_color_d3d3d3">#d3d3d3</color>
+    <color name="player_color_ec5353">#ec5353</color>
+    <color name="player_color_171717">#171717</color>
+    <color name="player_color_cc269bf6">#cc269bf6</color>
+    <color name="player_color_f43131">#f43131</color>
+    <color name="player_color_c14040">#c14040</color>
+    <color name="player_color_7fd3d3d3">#7fd3d3d3</color>
 
     <drawable name="transparent">#00000000</drawable>
 
-    <color name="letv_color_405c5c5c">#405c5c5c</color>
-    <color name="letv_color_ffe60012">#ffe60012</color>
-    <color name="letv_color_fff38305">#fff38305</color>
-    <color name="letv_color_ffec8e1f">#ffec8e1f</color>
-    <color name="letv_color_ffdd7801">#ffdd7801</color>
-    <color name="letv_color_4D525252">#4D525252</color>
-    <color name="letv_color_4dd3d3d3">#4dd3d3d3</color>
-    <color name="letv_color_4Dffffff">#4Dffffff</color>
-    <color name="letv_color_9Affffff">#9Affffff</color>
-    <color name="letv_color_cc232323">#cc232323</color>
-    <color name="letv_color_7fffffff">#7fffffff</color>
-    <color name="letv_color_cd3333">#cd3333</color>
+    <color name="player_color_405c5c5c">#405c5c5c</color>
+    <color name="player_color_ffe60012">#ffe60012</color>
+    <color name="player_color_fff38305">#fff38305</color>
+    <color name="player_color_ffec8e1f">#ffec8e1f</color>
+    <color name="player_color_ffdd7801">#ffdd7801</color>
+    <color name="player_color_4D525252">#4D525252</color>
+    <color name="player_color_4dd3d3d3">#4dd3d3d3</color>
+    <color name="player_color_4Dffffff">#4Dffffff</color>
+    <color name="player_color_9Affffff">#9Affffff</color>
+    <color name="player_color_cc232323">#cc232323</color>
+    <color name="player_color_7fffffff">#7fffffff</color>
+    <color name="player_color_cd3333">#cd3333</color>
 
     <!-- 升级 -->
 
@@ -180,11 +180,11 @@
 
     <color name="hot_play_linear_bg">#f7f7f7</color>
     <color name="hot_play_linear_line">#e3e3e3</color>
-    <color name="letv_color_ff6c7b82">#ff6c7b82</color>
-    <color name="letv_color_ff8d9ba6">#ff8d9ba6</color>
-    <color name="letv_color_ffd1d1d1">#ffd1d1d1</color>
-    <color name="letv_color_ff888888">#ff888888</color>
-    <color name="letv_color_ffd80e19">#ffd80e19</color>
+    <color name="player_color_ff6c7b82">#ff6c7b82</color>
+    <color name="player_color_ff8d9ba6">#ff8d9ba6</color>
+    <color name="player_color_ffd1d1d1">#ffd1d1d1</color>
+    <color name="player_color_ff888888">#ff888888</color>
+    <color name="player_color_ffd80e19">#ffd80e19</color>
     <!-- 选台 -->
     <color name="selections_child_row_color">#E6221f1c</color>
     <color name="channel_item_row_color">#E4161616</color>
@@ -204,19 +204,19 @@
     <color name="wo_flow_text_while_color">#ffffff</color>
 
     <!-- live pay color -->
-    <color name="letv_color_ff39fffd">#ff39fffd</color>
+    <color name="player_color_ff39fffd">#ff39fffd</color>
 
     <!-- 退出挽留 -->
 
-    <color name="letv_color_d70e19">#d70e19</color>
-    <color name="letv_color_cccccc">#cccccc</color>
-    <color name="letv_color_444444">#444444</color>
+    <color name="player_color_d70e19">#d70e19</color>
+    <color name="player_color_cccccc">#cccccc</color>
+    <color name="player_color_444444">#444444</color>
 
     <!-- mobile pay guide -->
-    <color name="letv_color_ffeeeeee">#ffeeeeee</color>
-    <color name="letv_color_fffbfbfb">#fffbfbfb</color>
-    <color name="letv_color_fff5f5f5">#fff5f5f5</color>
-    <color name="letv_color_ffc5c5c5">#ffc5c5c5</color>
+    <color name="player_color_ffeeeeee">#ffeeeeee</color>
+    <color name="player_color_fffbfbfb">#fffbfbfb</color>
+    <color name="player_color_fff5f5f5">#fff5f5f5</color>
+    <color name="player_color_ffc5c5c5">#ffc5c5c5</color>
 
     <!-- notification download -->
     <color name="notification_download_divider">#dcdcdc</color>
@@ -225,7 +225,7 @@
     <color name="notification_download_progress_bg">#cccccc</color>
     <color name="notification_download_progress">#0f93de</color>
     <color name="notification_download_error">#ffa500</color>
-    <color name="letv_color_5d5d5d">#5d5d5d</color>
+    <color name="player_color_5d5d5d">#5d5d5d</color>
     <color name="program_item_trance_white">#a0ffffff</color>
     <color name="program_item_trance_white1">#a0666666</color>
     <color name="program_item_trance_white2">#cccccc</color>
@@ -236,61 +236,61 @@
     <color name="leso_color_00a0e9">#00a0e9</color>
     <!-- leso -->
 
-    <color name="letv_color_channel_text_aaaaaa">#aaaaaa</color>
+    <color name="player_color_channel_text_aaaaaa">#aaaaaa</color>
 
     <!-- 通用 -->
     <color name="page_bg">#000000</color>
 
     <!-- 左右划屏控件 -->
-    <color name="letv_color_91999e">#91999e</color>
-    <color name="letv_color_518ef1">#518ef1</color>
-    <color name="letv_color_cbd0d1">#cbd0d1</color>
-    <color name="letv_color_212121">#212121</color>
+    <color name="player_color_91999e">#91999e</color>
+    <color name="player_color_518ef1">#518ef1</color>
+    <color name="player_color_cbd0d1">#cbd0d1</color>
+    <color name="player_color_212121">#212121</color>
     <!-- 缓存 -->
-    <color name="letv_color_1e8f8f8f">#1e8f8f8f</color>
-    <color name="letv_color_cf4444">#cf4444</color>
+    <color name="player_color_1e8f8f8f">#1e8f8f8f</color>
+    <color name="player_color_cf4444">#cf4444</color>
     <color name="color_b23f3f3f">#b23f3f3f</color>
-    <color name="letv_color_8f8f8f">#8f8f8f</color>
-    <color name="letv_color_cc8f8f8f">#cc8f8f8f</color>
-    <color name="letv_color_998f8f8f">#998f8f8f</color>
-    <color name="letv_color_b3ffffff">#b3ffffff</color>
-    <color name="letv_color_3f3f3f">#3f3f3f</color>
-    <color name="letv_color_f44336">#f44336</color>
-    <color name="letv_color_000000">#000000</color>
-    <color name="letv_color_1a1a1a">#1a1a1a</color>
-    <color name="letv_color_4d1a1a1a">#4d1a1a1a</color>
-    <color name="letv_color_151515">#151515</color>
+    <color name="player_color_8f8f8f">#8f8f8f</color>
+    <color name="player_color_cc8f8f8f">#cc8f8f8f</color>
+    <color name="player_color_998f8f8f">#998f8f8f</color>
+    <color name="player_color_b3ffffff">#b3ffffff</color>
+    <color name="player_color_3f3f3f">#3f3f3f</color>
+    <color name="player_color_f44336">#f44336</color>
+    <color name="player_color_000000">#000000</color>
+    <color name="player_color_1a1a1a">#1a1a1a</color>
+    <color name="player_color_4d1a1a1a">#4d1a1a1a</color>
+    <color name="player_color_151515">#151515</color>
     <!-- note wj: remove 8c000000 -->
-    <color name="letv_demo_8c000000">#8c000000</color>
-    <color name="letv_color_232323">#232323</color>
-    <color name="letv_color_747474">#747474</color>
-    <color name="letv_color_5b5b5b">#5b5b5b</color>
-    <color name="letv_color_3c3c3c">#3c3c3c</color>
-    <color name="letv_color_c1c1c1">#c1c1c1</color>
-    <color name="letv_color_11aaf9">#11aaf9</color>
-    <color name="letv_color_126da0">#126da0</color>
-    <color name="letv_color_11aafa">#11aafa</color>
-    <color name="letv_color_252525">#252525</color>
-    <color name="letv_color_ececec">#ececec</color>
-    <color name="letv_color_0e88c7">#0e88c7</color>
-    <color name="letv_color_156996">#156996</color>
-    <color name="letv_color_9c9c9c">#9c9c9c</color>
-    <color name="letv_color_f34235">#f34235</color>
+    <color name="player_demo_8c000000">#8c000000</color>
+    <color name="player_color_232323">#232323</color>
+    <color name="player_color_747474">#747474</color>
+    <color name="player_color_5b5b5b">#5b5b5b</color>
+    <color name="player_color_3c3c3c">#3c3c3c</color>
+    <color name="player_color_c1c1c1">#c1c1c1</color>
+    <color name="player_color_11aaf9">#11aaf9</color>
+    <color name="player_color_126da0">#126da0</color>
+    <color name="player_color_11aafa">#11aafa</color>
+    <color name="player_color_252525">#252525</color>
+    <color name="player_color_ececec">#ececec</color>
+    <color name="player_color_0e88c7">#0e88c7</color>
+    <color name="player_color_156996">#156996</color>
+    <color name="player_color_9c9c9c">#9c9c9c</color>
+    <color name="player_color_f34235">#f34235</color>
     <!-- 播放器 -->
-    <color name="letv_color_5ac2ff">#5ac2ff</color>
+    <color name="player_color_5ac2ff">#5ac2ff</color>
     <color name="player_toast_bg_color">#111111</color>
     <!-- 投诉按钮背景颜色 -->
-    <color name="letv_circleView_bg">#00a0e9</color>
-    <color name="letv_circleView_textColor">#0A0A0A</color>
+    <color name="player_circleView_bg">#00a0e9</color>
+    <color name="player_circleView_textColor">#0A0A0A</color>
     <!-- 关注 -->
-    <color name="letv_color_ffd3d3d3">#ffd3d3d3</color>
-    <color name="letv_color_99d3d3d3">#99d3d3d3</color>
-    <color name="letv_color_19ffffff">#19ffffff</color>
-    <color name="letv_color_fff44336">#fff44336</color>
+    <color name="player_color_ffd3d3d3">#ffd3d3d3</color>
+    <color name="player_color_99d3d3d3">#99d3d3d3</color>
+    <color name="player_color_19ffffff">#19ffffff</color>
+    <color name="player_color_fff44336">#fff44336</color>
     <!-- 公共布局中所用顔色 -->
-    <color name="letv_color_727272">#727272</color>
+    <color name="player_color_727272">#727272</color>
     <!-- 频道导航栏 -->
-    <color name="letv_color_ef4444">#ef4444</color>
+    <color name="player_color_ef4444">#ef4444</color>
     <color name="vpi__background_holo_dark">#ff000000</color>
     <color name="vpi__background_holo_light">#fff3f3f3</color>
     <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
@@ -304,5 +304,8 @@
     <color name="border_color">#585858</color>
     <color name="indicator_background">#98000000</color>
     <color name="color_stereo_enable">#5eb9ff</color>
+    
+    <color name="btn_down">#33eeeeee</color>
+    <color name="full_transparent">#00000000</color>
     
 </resources>
