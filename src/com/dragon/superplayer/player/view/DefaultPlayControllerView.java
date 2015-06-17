@@ -11,7 +11,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
 
 import com.dragon.superplayer.R;
-import com.dragon.superplayer.player.callback.PlayControllerViewCallback;
+import com.dragon.superplayer.player.view.callback.PlayControllerViewCallback;
 import com.dragon.superplayer.player.view.interfaces.IPlayerControllerViewInterface;
 
 /**

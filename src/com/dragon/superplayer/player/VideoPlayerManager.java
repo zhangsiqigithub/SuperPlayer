@@ -9,8 +9,8 @@ import android.content.res.Configuration;
 import android.os.BatteryManager;
 import android.view.ViewGroup.LayoutParams;
 
-import com.dragon.superplayer.player.callback.PlayControllerCallback;
 import com.dragon.superplayer.player.controller.playcontroller.VideoPlayController;
+import com.dragon.superplayer.player.controller.playcontroller.callback.PlayControllerCallback;
 import com.dragon.superplayer.player.controller.playcontroller.interfaces.IPlayControler;
 import com.dragon.superplayer.player.controller.viewcontroller.interfaces.IViewController;
 import com.dragon.superplayer.player.mediaplayer.ScreenStatus;

@@ -3,8 +3,8 @@ package com.dragon.superplayer.player.view.interfaces;
 import android.view.ViewGroup;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
-import com.dragon.superplayer.player.callback.PlayControllerViewCallback;
 import com.dragon.superplayer.player.view.DefaultPlayControllerView.PlayPauseBtnStatus;
+import com.dragon.superplayer.player.view.callback.PlayControllerViewCallback;
 
 /**
  * 播放控制栏界面布局接口

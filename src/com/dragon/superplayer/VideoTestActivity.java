@@ -37,8 +37,8 @@ public class VideoTestActivity extends Activity {
      * 播放测试
      */
     private void testPlay() {
-         this.copyToSdcard();
-         String url = this.DATABASE_PATH + "/" + this.DATABASE_FILENAME;
+        this.copyToSdcard();
+        String url = this.DATABASE_PATH + "/" + this.DATABASE_FILENAME;
         this.mVideoPlayerManager.getPlayController().startPlay(url, 0);
     }
 
@@ -84,17 +84,17 @@ public class VideoTestActivity extends Activity {
     protected void onResume() {
         super.onResume();
         this.log("onResume");
-        // if (this.mVideoPlayerManager != null) {
-        // this.mVideoPlayerManager.getPlayController().doPlay();
-        // }
+        if (this.mVideoPlayerManager != null) {
+            this.mVideoPlayerManager.getPlayController().doPlay();
+        }
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        // if (this.mVideoPlayerManager != null) {
-        // this.mVideoPlayerManager.getPlayController().doPause();
-        // }
+        if (this.mVideoPlayerManager != null) {
+            this.mVideoPlayerManager.getPlayController().doPause();
+        }
     }
 
     @Override

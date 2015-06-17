@@ -10,8 +10,7 @@ import android.view.SurfaceHolder.Callback;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
-import com.dragon.superplayer.player.callback.PlayControllerCallback;
-import com.dragon.superplayer.player.callback.PlayControllerViewCallback;
+import com.dragon.superplayer.player.controller.playcontroller.callback.PlayControllerCallback;
 import com.dragon.superplayer.player.controller.viewcontroller.ViewController;
 import com.dragon.superplayer.player.controller.viewcontroller.interfaces.IViewController;
 import com.dragon.superplayer.player.gesture.GestureCallback;
@@ -22,6 +21,7 @@ import com.dragon.superplayer.player.mediaplayer.interfaces.IMediaPlayer;
 import com.dragon.superplayer.player.model.PlayItem;
 import com.dragon.superplayer.player.util.LogUtil;
 import com.dragon.superplayer.player.view.DefaultPlayControllerView.PlayPauseBtnStatus;
+import com.dragon.superplayer.player.view.callback.PlayControllerViewCallback;
 
 /**
  * 视频播放控制实现类：IMediaPlayer和IViewController的持有者。

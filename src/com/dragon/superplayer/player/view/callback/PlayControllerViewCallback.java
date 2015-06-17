@@ -1,4 +1,4 @@
-package com.dragon.superplayer.player.callback;
+package com.dragon.superplayer.player.view.callback;
 
 /**
  * 控制面板点击回调接口

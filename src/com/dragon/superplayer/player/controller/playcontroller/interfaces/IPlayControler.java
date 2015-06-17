@@ -1,6 +1,6 @@
 package com.dragon.superplayer.player.controller.playcontroller.interfaces;
 
-import com.dragon.superplayer.player.callback.PlayControllerCallback;
+import com.dragon.superplayer.player.controller.playcontroller.callback.PlayControllerCallback;
 import com.dragon.superplayer.player.controller.viewcontroller.interfaces.IViewController;
 import com.dragon.superplayer.player.mediaplayer.PlayStatus;
 import com.dragon.superplayer.player.model.PlayItem;

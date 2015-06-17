@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.media.MediaPlayer;
 import android.text.TextUtils;
 
-import com.dragon.superplayer.player.callback.PlayControllerCallback;
+import com.dragon.superplayer.player.controller.playcontroller.callback.PlayControllerCallback;
 import com.dragon.superplayer.player.controller.viewcontroller.interfaces.IViewController;
 import com.dragon.superplayer.player.mediaplayer.BaseMediaPlayer;
 import com.dragon.superplayer.player.mediaplayer.MediaPlayerListener;

@@ -4,9 +4,9 @@ import android.view.SurfaceView;
 import android.view.ViewGroup;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
-import com.dragon.superplayer.player.callback.PlayControllerViewCallback;
 import com.dragon.superplayer.player.view.DefaultPlayControllerView;
 import com.dragon.superplayer.player.view.DefaultPlayControllerView.PlayPauseBtnStatus;
+import com.dragon.superplayer.player.view.callback.PlayControllerViewCallback;
 
 /**
  * 播放整个界面布局调用接口

@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
-import com.dragon.superplayer.player.callback.PlayControllerViewCallback;
 import com.dragon.superplayer.player.controller.viewcontroller.interfaces.IViewController;
 import com.dragon.superplayer.player.displayer.DefaultControllerViewDisplayer;
 import com.dragon.superplayer.player.displayer.interfaces.IControllerViewDisplayer;
@@ -18,6 +17,7 @@ import com.dragon.superplayer.player.view.DefaultPlayControllerView;
 import com.dragon.superplayer.player.view.DefaultPlayControllerView.PlayPauseBtnStatus;
 import com.dragon.superplayer.player.view.DefaultPlayerTipsFloatView;
 import com.dragon.superplayer.player.view.DefaultPlayerView;
+import com.dragon.superplayer.player.view.callback.PlayControllerViewCallback;
 import com.dragon.superplayer.player.view.interfaces.IPlayerControllerViewInterface;
 import com.dragon.superplayer.player.view.interfaces.IPlayerTipsFloatViewInterface;
 import com.dragon.superplayer.player.view.interfaces.IPlayerViewInterface;
