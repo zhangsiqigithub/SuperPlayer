@@ -21,6 +21,7 @@ public class MusicTestActivity extends Activity {
         // "http://m5.file.xiami.com/198/1198/6092/74560_10709259_l.mp3?auth_key=ff452dd093934813f201b43c8e2c1722-1432771200-0-null";
         this.mMusicPlayerManager.getPlayControler().startPlay(url, 0);
 
+        LogUtil.d("testGit");
     }
 
     @Override
